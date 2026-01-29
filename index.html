@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxWood | Marcenaria de Luxo Sorocaba & Móveis Sob Medida Campolim</title>
+    <meta name="description" content="A melhor marcenaria de luxo em Sorocaba. Especialistas em móveis sob medida no Campolim com projetos 3D personalizados. Engenharia de alta precisão e design autoral." />
+    <meta name="keywords" content="marcenaria de luxo Sorocaba, móveis sob medida Campolim, projetos 3D personalizados, marcenaria alto padrão Sorocaba, móveis planejados luxo, marcenaria santa rosália" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              wood: {
+                50: '#fbf8f4',
+                100: '#f5eee3',
+                200: '#eaddc7',
+                300: '#d9c2a2',
+                400: '#c4a484',
+                500: '#b48a62',
+                600: '#a67756',
+                700: '#8b6049',
+                800: '#724f40',
+                900: '#5d4137',
+              },
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      @keyframes slow-zoom {
+        from { transform: scale(1); }
+        to { transform: scale(1.1); }
+      }
+      ::selection {
+        background: #b48a62;
+        color: white;
+      }
+      .bg-mesh {
+        background-image: radial-gradient(at 0% 0%, rgba(180, 138, 98, 0.05) 0, transparent 50%), 
+                          radial-gradient(at 100% 100%, rgba(180, 138, 98, 0.05) 0, transparent 50%);
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-200 font-sans antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
